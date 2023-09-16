@@ -7,15 +7,38 @@
 	vertical-align: baseline;
 }
 
+.card-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
 .card{
     border: 1px solid black;
-    width: 490px;
+    width: 450px;
     height: 700px;
-    margin: 0 auto;
+    margin: 120px;
     margin-top: 30px;
     border-radius: 20px;
-    background: #16130e;  
+    background: #16130e; 
+    transform-origin: center center 0px;
+    transition: all .5s ease-out;
+    animation-name: animate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg);
+    z-index: 1;
 }
+
+.card:hover{
+    animation: unset;
+    margin-top: 18vh;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    
+}
+
+
+
  .card-bg {
     height: 600px;
     margin: 20px 20px 0 20px;
@@ -44,9 +67,7 @@
         -3px 3px 2px 3px #171314;
 }
 
-.img-title,
-.type-rarity,
-.card-text {
+.img-title, .type-rarity, .card-text {
     overflow: hidden;
 }
 
@@ -62,8 +83,7 @@
     flex-direction: column;
 }
 
-.img-title,
-.type-rarity {
+.img-title, .type-rarity {
     background: 
         linear-gradient( 0deg, rgba(201, 216, 201, .3), rgba(201, 216, 209, .3) ), 
         url(https://image.ibb.co/dFcNx7/tile_bg_2.jpg);
@@ -120,6 +140,7 @@
     font-size: 1.1em;
 }
 
+
 .contar-historia {
     font-style: italic;
     padding: 10px 0;
@@ -140,9 +161,6 @@ p {
     margin: 5px 15px 0 15px; 
 }
 
-fbi-left {
-    flex: 1;
-} 
 .info-left p:first-of-type {
     margin-bottom: 1px;
 }
@@ -164,7 +182,7 @@ fbi-left {
     position: relative;
     bottom: 11px;
     z-index: 2;
-    margin-left: 40px;
+    margin-left: 20px;
     background: lightgray;
     background-image: url(https://image.ibb.co/jyq34n/holofoil_texture_2.jpg);
     box-shadow: 
