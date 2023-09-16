@@ -11,6 +11,8 @@
 
 body{
     background-color: #3F1D38 ;
+    overflow: hidden;
+    overflow-y: scroll;
 
 }
 
@@ -19,7 +21,7 @@ body{
     background-color: #A2678A;
     padding: 10px 10px;
     font-family: 'Inconsolata', monospace;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 1530px;
   }
