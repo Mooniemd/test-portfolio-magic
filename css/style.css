@@ -10,24 +10,34 @@
 }
 
 body{
-    background-color:   #aabdc9 ;
+    background-color: #3F1D38 ;
+
 }
 
 .header {
     overflow: hidden;
-    background-color: #cbe1f0;
+    background-color: #A2678A;
     padding: 10px 10px;
     font-family: 'Inconsolata', monospace;
+    position: fixed;
+    top: 0;
+    width: 1530px;
   }
-  
+
   .header a {
     float: left;
-    color: black;
+    color: #f1e8f8;
     text-align: center;
     padding: 8px;
     margin-left: 20px;
     text-decoration: none;
     font-size: 20px;
+    transition: 0.3s;
+  }
+
+  .header a:hover{
+    color: #E19898;
+    transition: 0.3s;
   }
   
   .header a.logo {
@@ -67,9 +77,9 @@ body{
     border-radius: 20px;
     background: #16130e; 
     transform-origin: center center 0px;
-    transition: all .5s ease-out;
+    transition: all .4s ease-out;
     animation-name: animate;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg);
     z-index: 1;
@@ -81,8 +91,6 @@ body{
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     
 }
-
-
 
  .card-bg {
     height: 600px;
