@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
@@ -6,6 +8,49 @@
 	font: inherit;
 	vertical-align: baseline;
 }
+
+body{
+    background-color:   #aabdc9 ;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #cbe1f0;
+    padding: 10px 10px;
+    font-family: 'Inconsolata', monospace;
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 8px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .header-btns {
+    float: right;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-btns {
+      float: none;
+    }
+  }
+
+  
 
 .card-list{
     display: grid;
