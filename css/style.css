@@ -19,15 +19,14 @@ body{
 .header {
     overflow: hidden;
     background-color: #A2678A;
-    padding: 10px 10px;
     font-family: 'Inconsolata', monospace;
     position: absolute;
     top: 0;
-    width: 1530px;
+    width: 100%;
   }
 
   .header a {
-    float: left;
+    display: inline-block;
     color: #f1e8f8;
     text-align: center;
     padding: 8px;
@@ -251,4 +250,12 @@ p {
  .card-info img {
     overflow: hidden;
     max-width: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .card-list{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+    }
 }
